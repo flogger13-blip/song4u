@@ -1,0 +1,36 @@
+cd ~/song4u
+nano components/PlasmicRootProvider.client.t'use client';
+
+import type { ReactNode } from 'react';
+import { PlasmicRootProvider } from '@plasmicapp/loader-nextjs';
+import { PLASMIC } from './plasmic-init';
+
+export default function PlasmicRootProviderClient({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return <PlasmicRootProvider loader={PLASMIC}>{childre'use client';
+
+import { PlasmicRootProvider } from '@plasmicapp/loader-nextjs';
+import { PLASMIC } from './plasmic-init';
+
+export default function PlasmicRootProviderClient({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <PlasmicRootProvider loader={PLASMIC}>{children}</PlasmicRootProvider>;
+}'use client';
+
+import { ReactNode } from 'react';
+import { PlasmicRootProvider } from '@plasmicapp/loader-nextjs';
+import { PLASMIC } from '../lib/plasmic.client';
+
+export default function PlasmicRootProviderClient({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return <PlasmicRootProvider loader={PLASMIC}>{children}</PlasmicRootProvider>;
+}
